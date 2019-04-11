@@ -19,8 +19,8 @@ MANIFEST_URL_PREFIX = "https://iiif.chartes.psl.eu/manifests/adele/CCI"
 IMAGE_URL_PREFIX = "https://iiif.chartes.psl.eu/images/adele/CCI"
 
 # OUTPUT
-MAN_DIST_DIR = "dist/manifests/{0}".format(PROJECT)
-COLL_DIST_DIR = "dist/collections/{0}".format(PROJECT)
+MAN_DIST_DIR = "dist/manifests/{0}".format('CCI')
+COLL_DIST_DIR = "dist/collections/{0}".format('CCI')
 
 
 if __name__ == "__main__":

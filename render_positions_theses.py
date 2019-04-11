@@ -21,13 +21,13 @@ MANIFEST_URL_PREFIX = "https://iiif.chartes.psl.eu/manifests/encpos"
 IMAGE_URL_PREFIX = "https://iiif.chartes.psl.eu/images/encpos"
 
 # OUTPUT
-MAN_DIST_DIR = "dist/manifests/{0}".format(PROJECT)
-COLL_DIST_DIR = "dist/collections/{0}".format(PROJECT)
+MAN_DIST_DIR = "dist/manifests/{0}".format("encpos")
+COLL_DIST_DIR = "dist/collections/{0}".format("encpos")
 
 # SPECIFIC
 SRC_IMAGES_PATH = "/home/mrgecko/dev/data/THESES"
 PATTERN = re.compile("([0-9]{4})/((ENCPOS_[0-9]{4})_[0-9]{2})/TIFF/(ENCPOS_[0-9]{4}_[0-9]{2}_[0-9]{2}.TIF)$")
-
+#CANVAS_NAME_PATTERN = re.compile("ENCPOS_[0-9]{4}_([0-9]{2})")
 
 if __name__ == "__main__":
     tmp = load_json(TEMPLATE)
@@ -56,7 +56,7 @@ if __name__ == "__main__":
                 if "images" not in md_tmp[manifest_id]:
                     md_tmp[manifest_id]["images"] = []
 
-                image_partial_id = "{0}/{1}/{2}".format(year, filename, "full/full/0/default.jpg")
+                image_partial_id = "{0}/{1}/{2}".format(manifest_id, filename, "full/full/0/default.jpg")
                 md_tmp[manifest_id]["images"].append(image_partial_id)
                 md_tmp[manifest_id]["images"].sort()
 
