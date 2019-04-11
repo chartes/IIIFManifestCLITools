@@ -1,0 +1,29 @@
+{
+  "@id": "",
+  "@type": "sc:Manifest",
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "label": "",
+  "thumbnail": {
+    "@id": ""
+  },
+  "attribution": "",
+  "license": "http://rightsstatements.org/vocab/NoC-NC/1.0/",
+  "logo": "https://iiif.chartes.psl.eu/img/logo-enc.png",
+
+  "metadata": [
+    {
+      "label": "Manifest Provider",
+      "value": "École nationale des chartes"
+    }
+  ],
+  "sequences": [
+    {
+      "@context": "http://iiif.io/api/presentation/2/context.json",
+      "@id": "",
+      "@type": "sc:Sequence",
+      "canvases": [
+      
+      ]
+    }
+  ]
+}

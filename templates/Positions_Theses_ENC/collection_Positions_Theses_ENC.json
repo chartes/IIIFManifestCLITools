@@ -1,0 +1,10 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "https://iiif.chartes.psl.eu/collections/encpos/collection_Positions_Theses_ENC.json",
+  "@type": "sc:Collection",
+  "label": "Positions de thèses de l'École nationale des chartes",
+  "attribution": "École nationale des chartes",
+  "manifests": [
+
+  ]
+}

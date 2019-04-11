@@ -1,0 +1,12 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "https://iiif.chartes.psl.eu/collections/adele/collection_CCI_2018_2019.json",
+  "@type": "sc:Collection",
+  "label": "FLORILÈGE - Grands documents de l'histoire de France",
+  "description": "Dossiers diplomatiques utilisés lors du contrôle continu I 2018-2019",
+  "attribution": "École nationale des chartes",
+  "related": "http://www2.culture.gouv.fr/documentation/archim/exposition_florilege.htm",
+  "manifests": [
+
+  ]
+}
