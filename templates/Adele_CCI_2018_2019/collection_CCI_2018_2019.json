@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/2/context.json",
-  "@id": "https://iiif.chartes.psl.eu/collections/adele/collection_CCI_2018_2019.json",
+  "@id": "",
   "@type": "sc:Collection",
   "label": "FLORILÈGE - Grands documents de l'histoire de France",
   "description": "Dossiers diplomatiques utilisés lors du contrôle continu I 2018-2019",

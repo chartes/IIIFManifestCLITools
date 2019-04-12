@@ -16,6 +16,7 @@ IMAGE = "templates/image.json".format(PROJECT)
 
 # URLS
 MANIFEST_URL_PREFIX = "https://iiif.chartes.psl.eu/manifests/adele/CCI"
+COLLECTION_URL_PREFIX = "https://iiif.chartes.psl.eu/collections/adele"
 IMAGE_URL_PREFIX = "https://iiif.chartes.psl.eu/images/adele/CCI"
 
 # OUTPUT
@@ -41,7 +42,7 @@ if __name__ == "__main__":
             f.write(json.dumps(m, ensure_ascii=False))
 
     with open("{0}/{1}.json".format(COLL_DIST_DIR, COLLECTION_NAME), 'w') as f:
-        coll = render_collection(coll_tmp, manifests)
+        coll_name = "{0}/{1}.json".format(COLLECTION_URL_PREFIX, COLLECTION_NAME)
+        coll = render_collection(coll_tmp, manifests, coll_name)
         f.write(json.dumps(coll, ensure_ascii=False))
-        pprint.pprint(coll)
 

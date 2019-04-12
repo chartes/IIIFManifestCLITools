@@ -44,20 +44,23 @@ def render_template(template, canvas, image, meta, manifest_url_prefix, image_ur
         tmp["sequences"][0]["canvases"].append(cv)
 
     tmp["thumbnail"] = {
-        "@id" : tmp["sequences"][0]["canvases"][0]["@id"]
+        "@id": tmp["sequences"][0]["canvases"][0]["@id"]
     }
     tmp["sequences"][0]["thumbnail"] = tmp["thumbnail"]
 
     return tmp
 
 
-def render_collection(template, manifests):
+def render_collection(template, items, name, item_type="sc:Manifest"):
     coll = copy.deepcopy(template)
-    for m in sorted(manifests, key=lambda e: e["@id"]):
-        coll["manifests"].append({
-            "@id": m["@id"],
-            "@type": "sc:Manifest",
-            "label": m["label"]
+    t = "manifests" if item_type == "sc:Manifest" else "collections"
+    coll[t] = []
+    coll["@id"] = name
+    for item in sorted(items, key=lambda e: e["@id"]):
+        coll[t].append({
+            "@id": item["@id"],
+            "@type": item_type,
+            "label": item["label"]
         })
     return coll
 
