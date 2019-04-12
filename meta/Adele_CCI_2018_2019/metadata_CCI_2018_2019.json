@@ -114,6 +114,29 @@
       "images": [
         "AE_II_493p8.jpg/full/full/0/default.jpg"
       ]
+    },
+    {
+      "id": "AE_II_361B",
+      "label": "Philippe VI convoque une assemblée des trois états",
+      "images": [
+        "AE_II_361B.jpg/full/full/0/default.jpg"
+      ]
+    },
+    {
+      "id": "AE_II_300",
+      "label": "Franchises de Vaucouleurs par Gautier de Joinville avec l’accord de Jean de Joinville",
+      "images": [
+        "AE_II_300_f1.jpg/full/full/0/default.jpg",
+        "AE_II_300_f2.jpg/full/full/0/default.jpg",
+        "AE_II_300_f3.jpg/full/full/0/default.jpg"
+      ]
+    },
+    {
+      "id": "AE_III_71",
+      "label": "Henri V prolonge la trêve avec la France",
+      "images": [
+        "AE_III_71.jpg/full/full/0/default.jpg"
+      ]
     }
   ]
 }
