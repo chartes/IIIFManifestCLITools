@@ -1,29 +1,86 @@
 {
-  "@id": "",
-  "@type": "sc:Manifest",
-  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "id": "",
+  "type": "Manifest",
+  "@context": "http://iiif.io/api/presentation/3/context.json",
   "label": "",
-  "thumbnail": {
-  
+  "thumbnail": [
+   {
+     "id":"","type": "Image",
+     "format": "image/jpeg",
+     "service": [
+       {
+         "id": "",
+         "type": "ImageService2",
+         "profile": "level2"
+       }
+     ]
+   }
+  ],
+  "requiredStatement": {
+     "label": { "fr": [ "Distribution" ] },
+     "value": { "fr": [ "Distribué par l’École nationale des chartes" ] },
+     "label": { "en": [ "Attribution" ] },
+     "value": { "en": [ "Provided courtesy of École nationale des chartes" ] }
   },
-  "attribution": "",
-  "license": "http://rightsstatements.org/vocab/NoC-NC/1.0/",
-  "logo": "https://iiif.chartes.psl.eu/img/logo-enc.png",
-
-  "metadata": [
+  "rights": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "provider": [
+   {
+     "id": "https://www.wikidata.org/wiki/Q273570",
+     "type": "Agent",
+     "label": { "fr": [ "École nationale des chartes" ] },
+     "homepage": [
+       {
+         "id": "http://www.chartes.psl.eu/",
+         "type": "Dataset",
+         "label": { "fr": [ "Accueil du site de l’École des chartes" ] },
+         "format": "text/html"
+       }
+     ],
+     "logo": [
+       {
+         "id": "https://iiif.chartes.psl.eu/img/logo-enc.png",
+         "type": "Image",
+         "format": "image/png"
+       }
+     ]
+   }
+  ],
+  "homepage": [
+     {
+       "id": "",
+       "type": "Dataset",
+       "label": { "fr": [ "" ] },
+       "format": "text/html"
+     }
+  ],
+  "seeAlso": [
+   {
+     "id": "",
+     "type": "Dataset",
+     "format": "application/json",
+     "profile": "https://distributed-text-services.github.io/specifications/Collections-Endpoint.html"
+   }
+  ],
+  "rendering": [
+     {
+       "id": "",
+       "type": "Dataset",
+       "label": { "en": [ "Download as XML-TEI" ] },
+       "format": "application/xml"
+     }
+  ],
+  "partOf": [
     {
-      "label": "Manifest Provider",
-      "value": "École nationale des chartes"
+     "id": "",
+     "type": "Collection"
     }
   ],
-  "sequences": [
-    {
-      "@context": "http://iiif.io/api/presentation/2/context.json",
-      "@id": "",
-      "@type": "sc:Sequence",
-      "canvases": [
-      
-      ]
-    }
+  "start": {
+     "id": "",
+     "type": "Canvas"
+  },
+  "metadata": [
+  ],
+  "items": [
   ]
 }
