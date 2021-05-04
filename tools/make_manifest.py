@@ -56,9 +56,8 @@ def render_template(template, canvas, annotation, image, meta, manifest_url_pref
         if tmp["thumbnail"][0]["id"] == "":
             tmp["start"]["id"] = tmp["items"][0]["id"]
             tmp["thumbnail"][0]["id"] = image_url_prefix + "/" + meta["manifest"]["images"][i].replace("/full/full/",
-                                                                                                       "/full/80,100/")
-            tmp["thumbnail"][0]["service"][0]["id"] = "{0}/{1}/canvas/f{2}".format(manifest_url_prefix, manifest_id,
-                                                                                   i + 1)
+                                                                                                       "/full/180,/")
+            tmp["thumbnail"][0]["service"][0]["id"] = img.replace("/full/full/0/default.jpg", "")
     print(tmp)
     print(tmp["thumbnail"][0]["id"])
     return tmp

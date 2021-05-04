@@ -39,7 +39,7 @@
      ],
      "logo": [
        {
-         "id": "https://iiif.chartes.psl.eu/img/logo-enc.png",
+         "id": "https://iiif.chartes.psl.eu/img/logo-enc.png/full/max/0/default.png",
          "type": "Image",
          "format": "image/png"
        }
