@@ -5,15 +5,16 @@
   "label": "",
   "thumbnail": [
    {
-     "id":"","type": "Image",
+     "id":"",
+     "type": "Image",
      "format": "image/jpeg",
      "service": [
-       {
-         "id": "",
-         "type": "ImageService2",
-         "profile": "level2"
-       }
-     ]
+        {
+          "id": "",
+          "type": "ImageService3",
+          "profile": "level1"
+        }
+      ]
    }
   ],
   "requiredStatement": {

@@ -8,9 +8,9 @@
     "type": "Image",
     "format": "image/jpeg",
     "service": [{
-      "@context": "http://iiif.io/api/image/2/context.json",
       "id": "",
-      "profile": "http://iiif.io/api/image/2/level2.json"
+      "type": "ImageService2",
+      "profile": "level2"
     }]
   },
   "on": ""

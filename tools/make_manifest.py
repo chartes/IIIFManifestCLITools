@@ -17,7 +17,7 @@ def render_template(template, canvas, annotation, image, meta, manifest_url_pref
     # réécrire les chemins après maj de la logique de redirection
     tmp["id"] = "{0}/{1}.json".format(manifest_url_prefix, manifest_id)
     #A reprendre en envoyant le label en meta
-    tmp["label"] = {"fr": meta["manifest"]["label"]}
+    tmp["label"] = {"fr": [meta["manifest"]["label"]]}
     tmp["homepage"][0]["id"] = "{0}{1}".format(document_website_url_prefix, manifest_id)
     tmp["homepage"][0]["label"] = {"fr": ["Consultation de {0}".format(manifest_id)]}
     tmp["seeAlso"][0]["id"] = "{0}{1}".format(dts_collection_url_prefix, manifest_id)
@@ -51,18 +51,16 @@ def render_template(template, canvas, annotation, image, meta, manifest_url_pref
             resp = resp.json()
             cv["height"] = resp["height"]
             cv["width"] = resp["width"]
-            cv["thumbnail"] = {
-              "id": image_url_prefix + "/" + meta["manifest"]["images"][i].replace("/full/full/", "/full/180,/"),
-              "type": "Image"
-            }
         tmp["items"].append(cv)
-    tmp["start"]["id"] = tmp["items"][0]["id"]
+        # configuration du thumbnail global sur la première image
+        if tmp["thumbnail"][0]["id"] == "":
+            tmp["start"]["id"] = tmp["items"][0]["id"]
+            tmp["thumbnail"][0]["id"] = image_url_prefix + "/" + meta["manifest"]["images"][i].replace("/full/full/",
+                                                                                                       "/full/80,100/")
+            tmp["thumbnail"][0]["service"][0]["id"] = "{0}/{1}/canvas/f{2}".format(manifest_url_prefix, manifest_id,
+                                                                                   i + 1)
     print(tmp)
-    #configuration du thumbnail global sur la première image
-    tmp["thumbnail"][0]["id"] = image_url_prefix + "/" + meta["manifest"]["images"][i].replace("/full/full/", "/full/180,/")
-    tmp["thumbnail"][0]["service"][0]["id"] = image_url_prefix + "/" + meta["manifest"]["images"][i].replace("/full/full/", "/full/180,/"),
-    tmp["items"][0]["thumbnail"] = tmp["thumbnail"]
-
+    print(tmp["thumbnail"][0]["id"])
     return tmp
 
 
