@@ -13,7 +13,7 @@ def load_json(path):
 def render_template(template, canvas, annotation, image, meta, manifest_url_prefix, image_url_prefix, collection_url_prefix, dts_collection_url_prefix, dts_document_url_prefix, document_website_url_prefix):
     tmp = copy.deepcopy(template)
     manifest_id = meta["manifest"]["id"]
-
+    print(meta["manifest"]["metadata"])
     # réécrire les chemins après maj de la logique de redirection
     tmp["id"] = "{0}/{1}.json".format(manifest_url_prefix, manifest_id)
     #A reprendre en envoyant le label en meta
@@ -23,6 +23,7 @@ def render_template(template, canvas, annotation, image, meta, manifest_url_pref
     tmp["seeAlso"][0]["id"] = "{0}{1}".format(dts_collection_url_prefix, manifest_id)
     tmp["rendering"][0]["id"] = "{0}{1}".format(dts_document_url_prefix, manifest_id)
     tmp["partOf"][0]["id"] = "{0}{1}".format(collection_url_prefix, meta["collection"])
+    tmp["metadata"] = meta["manifest"]["metadata"]["metadata"]
 
 
     # render canvases
@@ -58,21 +59,19 @@ def render_template(template, canvas, annotation, image, meta, manifest_url_pref
             tmp["thumbnail"][0]["id"] = image_url_prefix + "/" + meta["manifest"]["images"][i].replace("/full/full/",
                                                                                                        "/full/180,/")
             tmp["thumbnail"][0]["service"][0]["id"] = img.replace("/full/full/0/default.jpg", "")
-    print(tmp)
-    print(tmp["thumbnail"][0]["id"])
     return tmp
 
 
 def render_collection(template, items, name, item_type="Manifest"):
     coll = copy.deepcopy(template)
-    t = "manifests" if item_type == "Manifest" else "collections"
+    t = "items" if item_type == "Manifest" else "collections"
     coll[t] = []
     coll["id"] = name
     for item in sorted(items, key=lambda e: e["id"]):
         coll[t].append({
             "id": item["id"],
             "type": item_type,
-            "label": {"fr": item["label"]}
+            "label": item["label"]
         })
     return coll
 

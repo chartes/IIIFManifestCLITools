@@ -1,8 +1,28 @@
 {
-  "metadata": {
-    "attribution": "École nationale des chartes"
-  },
-  "manifests": [
-  
+  "metadata": [
+    {
+     "label": { "fr": [ "dc:title" ] },
+     "value": { "fr": [ "" ] }
+   },
+   {
+     "label": { "fr": [ "dc:creator" ] },
+     "value": { "fr": [ "" ]}
+   },
+   {
+     "label": { "fr": [ "dc:publisher" ] },
+     "value": { "fr": [""] }
+   },
+   {
+     "label": { "fr": [ "dc:source" ] },
+     "value": { "fr": [""] }
+   },
+   {
+     "label": { "fr": [ "dc:date" ] },
+     "value": { "fr": [""] }
+   },
+   {
+     "label": { "fr": [ "dc:language" ] },
+     "value": { "fr": [""] }
+   }
   ]
 }
