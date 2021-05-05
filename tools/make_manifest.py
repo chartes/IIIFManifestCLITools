@@ -10,10 +10,9 @@ def load_json(path):
     return tmp
 
 #Ajouter une séparation en deux fonctions pour créer le canvas globale et une autre partie les images ou ajouter dans cette fonction l'ajout des metadonnées
-def render_template(template, canvas, annotation, image, meta, manifest_url_prefix, image_url_prefix, collection_url_prefix, dts_collection_url_prefix, dts_document_url_prefix, document_website_url_prefix):
+def render_template(template, canvas, annotation, image, meta, manifest_url_prefix, image_url_prefix, collection_url_prefix, dts_collection_url_prefix, dts_document_url_prefix, document_website_url_prefix, first_page=1):
     tmp = copy.deepcopy(template)
     manifest_id = meta["manifest"]["id"]
-    print(meta["manifest"]["metadata"])
     # réécrire les chemins après maj de la logique de redirection
     tmp["id"] = "{0}/{1}.json".format(manifest_url_prefix, manifest_id)
     #A reprendre en envoyant le label en meta
@@ -31,17 +30,17 @@ def render_template(template, canvas, annotation, image, meta, manifest_url_pref
         #réécrire les prefix d'url
         img = image_url_prefix + "/" + img
         cv = copy.deepcopy(canvas)
-        cv["label"] = {'none': ["p{0}".format(i+1)]}
+        cv["label"] = {'none': ["p{0}".format(i + first_page)]}
         # réécrire les chemins après maj de la logique de redirection et selon les spécifités de chaque projet donc créer un fichier de configuration pour ces entrées
-        cv["id"] = "{0}/{1}/canvas/f{2}".format(manifest_url_prefix, manifest_id, i+1)
+        cv["id"] = "{0}/{1}/canvas/f{2}".format(manifest_url_prefix, manifest_id, i + first_page)
         an = copy.deepcopy(annotation)
         #Mettre le annotation-page final selon le projet
-        an["id"] = "{0}/{1}/annotation-page/p{2}".format(manifest_url_prefix, manifest_id, i+1)
+        an["id"] = "{0}/{1}/annotation-page/p{2}".format(manifest_url_prefix, manifest_id, i + first_page)
         img_tmp = copy.deepcopy(image)
         img_tmp["on"] = cv["id"]
         # réécrire les chemins après maj de la logique de redirection
-        img_tmp["id"] = "{0}/{1}/annotation/a{2}".format(manifest_url_prefix, manifest_id, i + 1)
-        img_tmp["target"] = "{0}/{1}/canvas/f{2}".format(manifest_url_prefix, manifest_id, i + 1)
+        img_tmp["id"] = "{0}/{1}/annotation/a{2}".format(manifest_url_prefix, manifest_id, i + first_page)
+        img_tmp["target"] = "{0}/{1}/canvas/f{2}".format(manifest_url_prefix, manifest_id, i + first_page)
         img_tmp["body"]["id"] = img
         img_tmp["body"]["service"][0]["id"] = img.replace("/full/full/0/default.jpg", "")
         an["items"].append(img_tmp)
@@ -64,7 +63,7 @@ def render_template(template, canvas, annotation, image, meta, manifest_url_pref
 
 def render_collection(template, items, name, item_type="Manifest"):
     coll = copy.deepcopy(template)
-    t = "items" if item_type == "Manifest" else "collections"
+    t = "items"
     coll[t] = []
     coll["id"] = name
     for item in sorted(items, key=lambda e: e["id"]):

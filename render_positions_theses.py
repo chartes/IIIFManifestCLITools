@@ -49,6 +49,7 @@ if __name__ == "__main__":
     cv = load_json(CANVAS)
     an = load_json(ANNOTATION)
     img = load_json(IMAGE)
+    p = re.compile(r'<.*?>')
 
     coll_tmp = load_json(COLLECTION)
     yearly_collections = {}
@@ -92,7 +93,7 @@ if __name__ == "__main__":
                 list_delete = []
                 #ajout de l'information du dc:creator
                 if meta["title_rich"] != "":
-                    metadata_manifest["metadata"][0]["value"]["fr"][0] = meta["title_rich"]
+                    metadata_manifest["metadata"][0]["value"]["fr"][0] = p.sub('', meta["title_rich"])
                 else:
                     metadata_manifest["metadata"].pop(0)
                 #ajout de l'information du dc:creator
@@ -107,14 +108,15 @@ if __name__ == "__main__":
                 # Ajout des informations pour le dc:date
                 metadata_manifest["metadata"][4]["value"]["fr"][0] = m["year"]
                 # Ajout des informations pour le dc:language
-                metadata_manifest["metadata"][5]["value"]["fr"][0] = "français"
+                metadata_manifest["metadata"][5]["value"]["fr"][0] = "fr"
                 for d in list_delete:
                     metadata_manifest["metadata"].pop(d)
                 md["manifests"].append({
                     "id": m["id"],
-                    "label": m["label"],
+                    "label": "{0}, position de thèse de {1}, {2}".format(p.sub('', meta["title_rich"]), meta["NomComplet"], m["year"]),
                     "images": m["images"],
                     "year": m["year"],
+                    "first_page": int(meta["pagination"].split("-")[0]),
                     "metadata": metadata_manifest
                 })
                 break
@@ -126,7 +128,7 @@ if __name__ == "__main__":
         #Ajout dans les metadonnées de la collection dans laquelle est membre le manifest
         m = render_template(tmp, cv, an, img,
                             {"manifest": man, "collection": man["year"]},
-                            MANIFEST_URL_PREFIX, IMAGE_URL_PREFIX, COLLECTION_URL_PREFIX, DTS_COLLECTION_URL_PREFIX, DTS_DOCUMENT_URL_PREFIX, DOCUMENT_WEBSITE_URL_PREFIX)
+                            MANIFEST_URL_PREFIX, IMAGE_URL_PREFIX, COLLECTION_URL_PREFIX, DTS_COLLECTION_URL_PREFIX, DTS_DOCUMENT_URL_PREFIX, DOCUMENT_WEBSITE_URL_PREFIX, man["first_page"])
         manifests.append(m)
         with open("{0}/{1}.json".format(MAN_DIST_DIR, man["id"]), 'w') as f:
             f.write(json.dumps(m, ensure_ascii=False))
@@ -153,7 +155,7 @@ if __name__ == "__main__":
         toplevel_collection_items = [
             {
                 "id": "{0}/{1}_{2}.json".format(COLLECTION_URL_PREFIX, COLLECTION_NAME, year),
-                "label": {"fr": "Positions de thèses de l'année {0}".format(year)}
+                "label": {"fr": ["Positions de thèses de l'année {0}".format(year)]}
             }
             for year in yearly_collections.keys()
         ]
