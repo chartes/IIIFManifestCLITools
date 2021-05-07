@@ -11,8 +11,8 @@
      "service": [
         {
           "id": "",
-          "type": "ImageService3",
-          "profile": "level1"
+          "type": "ImageService2",
+          "profile": "level2"
         }
       ]
    }
@@ -23,7 +23,7 @@
      "label": { "en": [ "Attribution" ] },
      "value": { "en": [ "Provided courtesy of École nationale des chartes" ] }
   },
-  "rights": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "rights": "http://creativecommons.org/licenses/by-sa/4.0/",
   "provider": [
    {
      "id": "https://www.wikidata.org/wiki/Q273570",
@@ -32,16 +32,25 @@
      "homepage": [
        {
          "id": "http://www.chartes.psl.eu/",
-         "type": "Dataset",
+         "type": "Text",
          "label": { "fr": [ "Accueil du site de l’École des chartes" ] },
          "format": "text/html"
        }
      ],
      "logo": [
        {
-         "id": "https://iiif.chartes.psl.eu/img/logo-enc.png/full/max/0/default.png",
+         "id": "https://iiif.chartes.psl.eu/images/enc/logo-enc.png/full/full/0/default.png",
          "type": "Image",
-         "format": "image/png"
+         "format": "image/png",
+         "height": 302,
+         "width": 70,
+         "service": [
+            {
+             "id": "https://iiif.chartes.psl.eu/images/enc/logo-enc.png",
+             "type": "ImageService2",
+             "profile": "level2"
+            }
+         ]
        }
      ]
    }
@@ -49,24 +58,30 @@
   "homepage": [
      {
        "id": "",
-       "type": "Dataset",
-       "label": { "fr": [ "" ] },
+       "type": "Text",
+       "label": { "fr": [ "Lire la position" ] },
        "format": "text/html"
      }
   ],
   "seeAlso": [
    {
      "id": "",
+     "label": { "fr": [ "Notice DTS" ] },
      "type": "Dataset",
      "format": "application/json",
      "profile": "https://distributed-text-services.github.io/specifications/Collections-Endpoint.html"
-   }
+   },{
+      "id": "",
+      "label": { "fr": [ "Notice MARC XML de la thèse (Sudoc)" ] },
+      "type": "Dataset",
+      "format": "application/xml"
+    }
   ],
   "rendering": [
      {
        "id": "",
        "type": "Dataset",
-       "label": { "en": [ "Download as XML-TEI" ] },
+       "label": { "en": [ "XML/TEI" ] },
        "format": "application/xml"
      }
   ],

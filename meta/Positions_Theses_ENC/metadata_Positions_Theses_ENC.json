@@ -1,27 +1,23 @@
 {
   "metadata": [
     {
-     "label": { "fr": [ "dc:title" ] },
+     "label": { "fr": [ "Titre" ] },
      "value": { "fr": [ "" ] }
    },
-   {
-     "label": { "fr": [ "dc:creator" ] },
+    {
+     "label": { "fr": [ "Auteur" ] },
      "value": { "fr": [ "" ]}
    },
    {
-     "label": { "fr": [ "dc:publisher" ] },
+     "label": { "fr": [ "Éditeur" ] },
      "value": { "fr": [""] }
    },
    {
-     "label": { "fr": [ "dc:source" ] },
+     "label": { "fr": [ "Source" ] },
      "value": { "fr": [""] }
    },
    {
-     "label": { "fr": [ "dc:date" ] },
-     "value": { "fr": [""] }
-   },
-   {
-     "label": { "fr": [ "dc:language" ] },
+     "label": { "fr": [ "date" ] },
      "value": { "fr": [""] }
    }
   ]

@@ -2,7 +2,7 @@
   "@context": "http://iiif.io/api/presentation/3/context.json",
   "id": "",
   "type": "Collection",
-  "label": "Positions de thèses de l'École nationale des chartes",
+  "label": "",
   "requiredStatement": {
      "label": { "fr": [ "Distribution" ] },
      "value": { "fr": [ "Distribué par l’École nationale des chartes" ] },
