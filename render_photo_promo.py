@@ -70,11 +70,11 @@ if __name__ == "__main__":
     for m in md_tmp.values():
         metadata_manifest = copy.deepcopy(metadata)
         print(m['label'])
-        if m['label'].split("_")[1] == 1:
+        if m['label'].split("_")[2] == "1":
             label_manifest = "Photographie numéro {1} des {2}er année de l'année {0} l'École nationale des chartes".format(m["year"], m['label'].split("_")[-1], m['label'].split("_")[2])
         else:
             label_manifest = "Photographie numéro {1} des {2}ème année de l'année {0} l'École nationale des chartes".format(
-                m["year"], m['label'].split("_")[-1], m['label'].split("_")[1])
+                m["year"], m['label'].split("_")[-1], m['label'].split("_")[2])
         metadata_manifest["metadata"][0]["value"]["fr"][0] = label_manifest
         metadata_manifest["metadata"][1]["value"]["fr"][0] = m["year"]
         md["manifests"].append({
