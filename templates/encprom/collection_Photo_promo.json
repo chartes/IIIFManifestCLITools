@@ -1,0 +1,88 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "",
+  "type": "Collection",
+  "label": "",
+  "summary": "",
+  "requiredStatement": {
+    "label": {
+      "fr": [
+        "Distribution"
+      ]
+    },
+    "value": {
+      "fr": [
+        "Distribué par l’École nationale des chartes"
+      ]
+    },
+    "label": {
+      "en": [
+        "Attribution"
+      ]
+    },
+    "value": {
+      "en": [
+        "Provided courtesy of École nationale des chartes"
+      ]
+    }
+  },
+  "thumbnail": [
+    {
+      "id": "https://iiif.chartes.psl.eu/images/encprom/encprom_1904-1905_2_1/encprom_1904-1905_2_1_1.jpg/full/180,/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg",
+      "service": [
+        {
+          "id": "https://iiif.chartes.psl.eu/images/encprom/encprom_1904-1905_2_1/encprom_1904-1905_2_1_1.jpg",
+          "type": "ImageService2",
+          "profile": "level2"
+        }
+      ]
+    }
+  ],
+  "partOf": [
+    {
+      "id": "https://iiif.chartes.psl.eu/encprom/collection/top",
+      "type": "Collection"
+    }
+  ],
+  "provider": [
+    {
+      "id": "https://www.wikidata.org/wiki/Q273570",
+      "type": "Agent",
+      "label": {
+        "fr": [
+          "École nationale des chartes"
+        ]
+      },
+      "homepage": [
+        {
+          "id": "http://www.chartes.psl.eu/",
+          "type": "Text",
+          "label": {
+            "fr": [
+              "Accueil du site de l’École des chartes"
+            ]
+          },
+          "format": "text/html"
+        }
+      ],
+      "logo": [
+        {
+          "id": "https://iiif.chartes.psl.eu/images/enc/logo-enc.png/full/full/0/default.png",
+          "type": "Image",
+          "format": "image/png",
+          "height": 302,
+          "width": 70,
+          "service": [
+            {
+              "id": "https://iiif.chartes.psl.eu/images/enc/logo-enc.png",
+              "type": "ImageService2",
+              "profile": "level2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

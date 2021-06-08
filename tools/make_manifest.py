@@ -19,7 +19,10 @@ def render_template(template, canvas, annotation, image, meta, manifest_url_pref
         #réécrire les prefix d'url
         img = image_url_prefix + "/" + img
         cv = copy.deepcopy(canvas)
-        cv["label"] = {'none': ["p. {0}".format(i + first_page)]}
+        if type(first_page) is list:
+            cv["label"] = {'none': ["{0}".format(first_page[i])]}
+        else:
+            cv["label"] = {'none': ["p. {0}".format(i + first_page)]}
         # réécrire les chemins après maj de la logique de redirection et selon les spécifités de chaque projet donc créer un fichier de configuration pour ces entrées
         cv["id"] = "{0}/{1}/canvas/f{2}".format(manifest_url_prefix, manifest_id, i + 1)
         an = copy.deepcopy(annotation)
@@ -63,8 +66,7 @@ def render_collection(template, items, id, label, summary, thumbnail, item_type=
         coll["thumbnail"][0]["service"][0]["id"] = thumbnail.split("/full")[0]
     if "top" in id:
        coll.pop("partOf")
-
-    for item in sorted(items, key=lambda e: e["id"]):
+    for item in items:
         coll[t].append({
             "id": item["id"],
             "type": item_type,
