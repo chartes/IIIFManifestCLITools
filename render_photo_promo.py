@@ -70,11 +70,10 @@ if __name__ == "__main__":
     for m in md_tmp.values():
         metadata_manifest = copy.deepcopy(metadata)
         print(m['label'])
-        if m['label'].split("_")[2] == "1":
-            label_manifest = "Photographie numéro {1} des {2}er année de l'année {0} l'École nationale des chartes".format(m["year"], m['label'].split("_")[-1], m['label'].split("_")[2])
+        if m['label'].split("_")[2] != "T":
+            label_manifest = "Photographie de promotion {0} de l’École des chartes, {2}e année (exemplaire {1})".format(m["year"], m['label'].split("_")[-1], m['label'].split("_")[2])
         else:
-            label_manifest = "Photographie numéro {1} des {2}ème année de l'année {0} l'École nationale des chartes".format(
-                m["year"], m['label'].split("_")[-1], m['label'].split("_")[2])
+            label_manifest = "Photographie de promotion {0} de l’École des chartes (exemplaire {1})".format(m["year"], m['label'].split("_")[-1])
         metadata_manifest["metadata"][0]["value"]["fr"][0] = label_manifest
         metadata_manifest["metadata"][1]["value"]["fr"][0] = m["year"]
         md["manifests"].append({
@@ -119,8 +118,8 @@ if __name__ == "__main__":
         coll_name = "{0}_{1}".format(COLLECTION_NAME.lower(), year)
         with open("{0}/{1}.json".format(COLL_DIST_DIR, coll_name.lower()), 'w') as f:
             coll_name = "{0}/{1}_{2}".format(COLLECTION_URL_PREFIX, COLLECTION_NAME.lower(), year)
-            coll_label = {"fr": ["Photographie des promotions de l'École nationale des chartes en {0}".format(year)]}
-            coll_summary = {"fr": ["Les photographies des différentes promotions de École nationale des chartes en {0}.".format(year)]}
+            coll_label = {"fr": ["Photographie des promotions de l'École des chartes en {0}".format(year)]}
+            coll_summary = {"fr": ["Des photographies de différentes promotions de l'École des chartes en {0}.".format(year)]}
             manifests = sorted(manifests, key=lambda e: e["id"])
             thumb = sorted(manifests, key=lambda e: e["id"])[0]["thumbnail"][0]["id"]
             yearly_collection = render_collection(coll_tmp, manifests , coll_name, coll_label, coll_summary, thumb)
@@ -140,15 +139,15 @@ if __name__ == "__main__":
     #Remplacer collection_name par top
     with open("{0}/{1}.json".format(COLL_DIST_DIR, COLLECTION_NAME.lower()), 'w') as f:
         coll_name = "{0}/top".format(COLLECTION_URL_PREFIX)
-        coll_label = {"fr": ["Photographie des promotions de l'École nationale des chartes"]}
-        coll_summary = {"fr": ["Les photographies des différentes promotions de École nationale des chartes depuis 1904-1905"]}
+        coll_label = {"fr": ["Photographies de promotions de l’École des chartes"]}
+        coll_summary = {"fr": ["Collection de photographies des promotions de l’École des chartes depuis 1905."]}
         toplevel_collection_items = []
         coll_thumb = ""
         for data in collection_data:
             toplevel_collection_items.append(
                 {
                     "id": "{0}/{1}_{2}".format(COLLECTION_URL_PREFIX, COLLECTION_NAME.lower(), data['year']),
-                    "label": {"fr": ["Photographie des promotions de l'École nationale des chartes {0}".format(data['year'])]},
+                    "label": {"fr": ["Photographie des promotions de l'École des chartes en {0}".format(data['year'])]},
                     "thumbnail": data['thumb']
                 })
         toplevel_collection_items = sorted(toplevel_collection_items, key=lambda e: e["id"])
