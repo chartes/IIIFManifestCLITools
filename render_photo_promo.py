@@ -70,12 +70,14 @@ if __name__ == "__main__":
     for m in md_tmp.values():
         metadata_manifest = copy.deepcopy(metadata)
         print(m['label'])
-        if m['label'].split("_")[2] != "T":
-            label_manifest = "Photographie de promotion {0} de l’École des chartes, {2}e année (exemplaire {1})".format(m["year"], m['label'].split("_")[-1], m['label'].split("_")[2])
+        if m['label'].split("_")[2] == "T":
+            label_manifest = "Photographie de groupe l'ensemble des promotions de l’École des chartes en {0}, (exemplaire {1})".format(
+                m["year"], m['label'].split("_")[-1])
+        elif m['label'].split("_")[2] == "1":
+            label_manifest = "Photographie de promotion de l’École des chartes, {0}, {2}ère année (exemplaire {1})".format(m["year"], m['label'].split("_")[-1], m['label'].split("_")[2])
         else:
-            label_manifest = "Photographie de promotion {0} de l’École des chartes (exemplaire {1})".format(m["year"], m['label'].split("_")[-1])
-        metadata_manifest["metadata"][0]["value"]["fr"][0] = label_manifest
-        metadata_manifest["metadata"][1]["value"]["fr"][0] = m["year"]
+            label_manifest = "Photographie de promotion de l’École des chartes, {0}, {2}e année (exemplaire {1})".format(m["year"], m['label'].split("_")[-1], m['label'].split("_")[2])
+        metadata_manifest["metadata"][0]["value"]["fr"][0] = m["year"]
         md["manifests"].append({
             "id": m["id"].lower(),
             "label": label_manifest,
@@ -118,7 +120,7 @@ if __name__ == "__main__":
         coll_name = "{0}_{1}".format(COLLECTION_NAME.lower(), year)
         with open("{0}/{1}.json".format(COLL_DIST_DIR, coll_name.lower()), 'w') as f:
             coll_name = "{0}/{1}_{2}".format(COLLECTION_URL_PREFIX, COLLECTION_NAME.lower(), year)
-            coll_label = {"fr": ["Photographie des promotions de l'École des chartes en {0}".format(year)]}
+            coll_label = {"fr": ["Photographies des promotions de l'École des chartes en {0}".format(year)]}
             coll_summary = {"fr": ["Des photographies de différentes promotions de l'École des chartes en {0}.".format(year)]}
             manifests = sorted(manifests, key=lambda e: e["id"])
             thumb = sorted(manifests, key=lambda e: e["id"])[0]["thumbnail"][0]["id"]
@@ -147,7 +149,7 @@ if __name__ == "__main__":
             toplevel_collection_items.append(
                 {
                     "id": "{0}/{1}_{2}".format(COLLECTION_URL_PREFIX, COLLECTION_NAME.lower(), data['year']),
-                    "label": {"fr": ["Photographie des promotions de l'École des chartes en {0}".format(data['year'])]},
+                    "label": {"fr": ["Photographies des promotions de l'École des chartes en {0}".format(data['year'])]},
                     "thumbnail": data['thumb']
                 })
         toplevel_collection_items = sorted(toplevel_collection_items, key=lambda e: e["id"])
