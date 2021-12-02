@@ -22,7 +22,7 @@ def render_template(template, canvas, annotation, image, meta, manifest_url_pref
         if type(first_page) is list:
             cv["label"] = {'none': ["{0}".format(first_page[i])]}
         else:
-            cv["label"] = {'none': ["p. {0}".format(i + first_page)]}
+            cv["label"] = {'none': ["p. {0}".format(i + int(first_page))]}
         # réécrire les chemins après maj de la logique de redirection et selon les spécifités de chaque projet donc créer un fichier de configuration pour ces entrées
         cv["id"] = "{0}/{1}/canvas/f{2}".format(manifest_url_prefix, manifest_id, i + 1)
         an = copy.deepcopy(annotation)
@@ -53,7 +53,7 @@ def render_template(template, canvas, annotation, image, meta, manifest_url_pref
     return tmp
 
 
-def render_collection(template, items, id, label, summary, thumbnail, item_type="Manifest"):
+def render_collection(template, items, id, label, summary, thumbnail, seeAlso, item_type="Manifest"):
     coll = copy.deepcopy(template)
     t = "items"
     coll[t] = []
@@ -61,6 +61,8 @@ def render_collection(template, items, id, label, summary, thumbnail, item_type=
     #Ajouter une manière élégante de rajouter le label qui dépend entre le top et les sous collections
     coll["label"] = label
     coll["summary"] = summary
+    if seeAlso != '':
+        coll["seeAlso"][0]["id"] = seeAlso
     if thumbnail != '':
         coll["thumbnail"][0]["id"] = thumbnail
         coll["thumbnail"][0]["service"][0]["id"] = thumbnail.split("/full")[0]

@@ -26,18 +26,18 @@ MANIFEST_URL_PREFIX = "https://iiif.chartes.psl.eu/encpos"
 COLLECTION_URL_PREFIX = "https://iiif.chartes.psl.eu/encpos/collection"
 IMAGE_URL_PREFIX = "https://iiif.chartes.psl.eu/images/encpos"
 #Mettre à jour avec la version final des endpoint DTS
-DTS_COLLECTION_URL_PREFIX = "https://dev.chartes.psl.eu/dts/collections?id="
-DTS_DOCUMENT_URL_PREFIX = "https://dev.chartes.psl.eu/dts/document?id="
+DTS_COLLECTION_URL_PREFIX = "https://theses.chartes.psl.eu/dts/collections?id="
+DTS_DOCUMENT_URL_PREFIX = "https://theses.chartes.psl.eu/dts/document?id="
 #URL de sortie
-DOCUMENT_WEBSITE_URL_PREFIX = "https://dev.chartes.psl.eu/theses/document/"
+DOCUMENT_WEBSITE_URL_PREFIX = "https://theses.chartes.psl.eu/document/"
 
 # OUTPUT
 MAN_DIST_DIR = "dist/manifests/{0}".format("encpos")
 COLL_DIST_DIR = "dist/collections/{0}".format("encpos")
 
 # SPECIFIC
-#SRC_IMAGES_PATH = "/media/cfaye/BackupPlus/IIIF_Image/ENCPOS"
-SRC_IMAGES_PATH = "/home/cfaye/Bureau/IIIF_Test/ENCPOS"
+SRC_IMAGES_PATH = "/media/cfaye/BackupPlus/IIIF_Image/ENCPOS"
+#SRC_IMAGES_PATH = "/home/cfaye/Bureau/IIIF_Test/ENCPOS"
 PATTERN = re.compile("([0-9]{4})/((ENCPOS_[0-9]{4})_[0-9]{2})/TIFF/(ENCPOS_[0-9]{4}_[0-9]{2}_[0-9]{2}.TIF)$")
 EXTERNAL_METADATA = "meta/{0}/encpos.tsv".format(PROJECT)
 
@@ -113,20 +113,17 @@ if __name__ == "__main__":
                 #ajout de l'information du dc:creator
                 if meta["title_rich"] != '':
                     metadata_manifest["metadata"][0]["value"]["fr"][0] = meta["title_rich"]
-                    label_manifest = "{0}, {1}".format(meta["NomComplet"], p.sub('', meta["title_rich"]))
-                else:
-                    list_delete.append(0)
-                    label_manifest = meta["title_text"]
+                    label_manifest = "{0}, {1}".format(meta["author_fullname_label"], p.sub('', meta["title_rich"]))
                 # CLEANER LES CHAMPS AUTEURS
-                if meta["author_idref-id"]!="" and meta["ark_databnf"] != "" and meta["link_wikipedia"] != "":
+                if meta["author_idref_ppn"]!="" and meta["author_bnf_ark"] != "" and meta["author_wikipedia_url"] != "":
                     #ajout de l'information de l'auteur
-                    metadata_manifest["metadata"][1]["value"]["fr"][0] = "{0} (voir <a href=\"https://www.idref.fr/{1}\">idref</a>, <a href=\"{2}\">wikipedia</a>, <a href=\"{3}\">BnF</a>)".format(meta["NomComplet"], meta["author_idref-id"], meta["link_wikipedia"], meta["ark_databnf"])
-                elif meta["author_idref-id"]!="" and meta["ark_databnf"] != "":
-                    metadata_manifest["metadata"][1]["value"]["fr"][0] = "{0} (voir <a href=\"https://www.idref.fr/{1}\">idref</a>, <a href=\"{2}\">BnF</a>)".format(meta["NomComplet"], meta["author_idref-id"], meta["ark_databnf"])
-                elif meta["author_idref-id"] != "" :
-                    metadata_manifest["metadata"][1]["value"]["fr"][0] = "{0} (voir <a href=\"https://www.idref.fr/{1}\">idref</a>)".format(meta["NomComplet"], meta["author_idref-id"])
-                elif meta["NomComplet"] != "" :
-                    metadata_manifest["metadata"][1]["value"]["fr"][0] = meta["NomComplet"]
+                    metadata_manifest["metadata"][1]["value"]["fr"][0] = "{0} (voir <a href=\"https://www.idref.fr/{1}\">idref</a>, <a href=\"{2}\">wikipedia</a>, <a href=\"https://catalogue.bnf.fr/{3}\">BnF</a>)".format(meta["author_fullname_label"], meta["author_idref_ppn"], meta["author_wikipedia_url"], meta["author_bnf_ark"])
+                elif meta["author_idref_ppn"]!="" and meta["author_bnf_ark"] != "":
+                    metadata_manifest["metadata"][1]["value"]["fr"][0] = "{0} (voir <a href=\"https://www.idref.fr/{1}\">idref</a>, <a href=\"https://catalogue.bnf.fr/{2}\">BnF</a>)".format(meta["author_fullname_label"], meta["author_idref_ppn"], meta["author_bnf_ark"])
+                elif meta["author_idref_ppn"] != "" :
+                    metadata_manifest["metadata"][1]["value"]["fr"][0] = "{0} (voir <a href=\"https://www.idref.fr/{1}\">idref</a>)".format(meta["author_fullname_label"], meta["author_idref_ppn"])
+                elif meta["author_fullname_label"] != "" :
+                    metadata_manifest["metadata"][1]["value"]["fr"][0] = meta["author_fullname_label"]
                 else:
                     list_delete.append(1)
                 #Ajout des informations pour le dc:publisher
@@ -135,8 +132,6 @@ if __name__ == "__main__":
                 metadata_manifest["metadata"][3]["value"]["fr"][0] = "Positions des thèses soutenues par les élèves de la promotion de {0} pour obtenir le diplôme d'archiviste paléographe".format(m["year"])
                 # Ajout des informations pour le dc:date
                 metadata_manifest["metadata"][4]["value"]["fr"][0] = m["year"]
-                print(type(list_delete))
-                print(list_delete)
                 list_delete = list_delete[::-1]
                 for d in list_delete:
                     metadata_manifest["metadata"].pop(d)
@@ -151,7 +146,7 @@ if __name__ == "__main__":
                     "year": m["year"],
                     "first_page": page,
                     "metadata": metadata_manifest,
-                    "sudoc": meta["these_ppn-sudoc"]
+                    "sudoc": meta["sudoc_these-record_ppn"]
                 })
                 break
 
@@ -178,8 +173,9 @@ if __name__ == "__main__":
                             {"manifest": man, "collection": man["year"]},
                             MANIFEST_URL_PREFIX, IMAGE_URL_PREFIX, man["first_page"])
         manifests.append(m)
+        print(man["id"])
         with open("{0}/{1}.json".format(MAN_DIST_DIR, man["id"].lower()), 'w') as f:
-            f.write(json.dumps(m, ensure_ascii=False))
+            f.write(json.dumps(m, indent=4, ensure_ascii=False))
         #Ajouter le contrôle avec l'API validator
 
         if not man["year"] in yearly_collections:
@@ -198,7 +194,7 @@ if __name__ == "__main__":
                     thumb = ids["thumbnail"][0]["id"]
             if thumb == "":
                 thumb = sorted(manifests, key=lambda e: e["id"])[0]["thumbnail"][0]["id"]
-            yearly_collection = render_collection(coll_tmp, manifests, coll_name, coll_label, coll_summary, thumb)
+            yearly_collection = render_collection(coll_tmp, manifests, coll_name, coll_label, coll_summary, thumb, seeAlso=None)
             f.write(json.dumps(yearly_collection, indent=4, ensure_ascii=False))
         thumb = ""
     collection_data = []
@@ -233,6 +229,7 @@ if __name__ == "__main__":
             coll_label,
             coll_summary,
             coll_thumb,
+            seeAlso=None,
             item_type="Collection"
         )
         print(toplevel_collection)

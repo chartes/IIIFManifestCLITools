@@ -28,12 +28,12 @@
   },
   "thumbnail": [
     {
-      "id": "https://iiif.chartes.psl.eu/images/photo_promo/1904-1905_2_recto_1.jpg/full/180,/0/default.jpg",
+      "id": "https://iiif.chartes.psl.eu/images/lasteyrie/lasteyrie_1/lasteyrie_1.jpg/full/180,/0/default.jpg",
       "type": "Image",
       "format": "image/jpeg",
       "service": [
         {
-          "id": "https://iiif.chartes.psl.eu/images/encpos/1904-1905_2_recto_1.jpg",
+          "id": "https://iiif.chartes.psl.eu/images/lasteyrie/lasteyrie_1/lasteyrie_1.jpg",
           "type": "ImageService2",
           "profile": "level2"
         }
@@ -42,7 +42,7 @@
   ],
   "partOf": [
     {
-      "id": "https://iiif.chartes.psl.eu/encpos/collection/top",
+      "id": "https://iiif.chartes.psl.eu/encprom/collection/top",
       "type": "Collection"
     }
   ],
@@ -84,18 +84,5 @@
         }
       ]
     }
-  ],
-  "seeAlso": [
-        {
-            "id": "",
-            "label": {
-                "fr": [
-                    "Notice DTS"
-                ]
-            },
-            "type": "Dataset",
-            "format": "application/json",
-            "profile": "https://distributed-text-services.github.io/specifications/Collections-Endpoint.html"
-        }
-    ]
+  ]
 }
