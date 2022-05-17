@@ -1,0 +1,1902 @@
+{
+    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/manifest",
+    "type": "Manifest",
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "label": {
+        "fr": [
+            "Carnet de dessins de Robert de Lasteyrie"
+        ]
+    },
+    "thumbnail": [
+        {
+            "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0001_L.jpg/full/180,/0/default.jpg",
+            "type": "Image",
+            "format": "image/jpeg",
+            "service": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0001_L.jpg",
+                    "type": "ImageService2",
+                    "profile": "level2"
+                }
+            ]
+        }
+    ],
+    "requiredStatement": {
+        "label": {
+            "en": [
+                "Attribution"
+            ]
+        },
+        "value": {
+            "en": [
+                "Provided courtesy of École nationale des chartes"
+            ]
+        }
+    },
+    "rights": "http://creativecommons.org/licenses/by-sa/4.0/",
+    "provider": [
+        {
+            "id": "https://www.wikidata.org/wiki/Q273570",
+            "type": "Agent",
+            "label": {
+                "fr": [
+                    "École nationale des chartes"
+                ]
+            },
+            "homepage": [
+                {
+                    "id": "http://www.chartes.psl.eu/",
+                    "type": "Text",
+                    "label": {
+                        "fr": [
+                            "Accueil du site de l’École des chartes"
+                        ]
+                    },
+                    "format": "text/html"
+                }
+            ],
+            "logo": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/images/enc/logo-enc.png/full/full/0/default.png",
+                    "type": "Image",
+                    "format": "image/png",
+                    "height": 302,
+                    "width": 70,
+                    "service": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/images/enc/logo-enc.png",
+                            "type": "ImageService2",
+                            "profile": "level2"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "partOf": [
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/collection/lasteyrie",
+            "type": "Collection"
+        }
+    ],
+    "start": {
+        "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f1",
+        "type": "Canvas"
+    },
+    "metadata": [
+        {
+            "label": {
+                "fr": [
+                    "Auteur"
+                ]
+            },
+            "value": {
+                "fr": [
+                    "Robert de Lasteyrie"
+                ]
+            }
+        }
+    ],
+    "items": [
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f1",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 1"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p1",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a1",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f1",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0001_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0001_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f2",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 2"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p2",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a2",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f2",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0002_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0002_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f3",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 3"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p3",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a3",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f3",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0003_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0003_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f3"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f4",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 4"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p4",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a4",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f4",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0004_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0004_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f4"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f5",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 5"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p5",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a5",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f5",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0005_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0005_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f5"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f6",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 6"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p6",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a6",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f6",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0006_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0006_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f7",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 7"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p7",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a7",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f7",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0007_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0007_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f7"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f8",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 8"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p8",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a8",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f8",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0008_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0008_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f8"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f9",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 9"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p9",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a9",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f9",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0009_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0009_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f9"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f10",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 10"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p10",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a10",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f10",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0010_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0010_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f10"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f11",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 11"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p11",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a11",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f11",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0011_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0011_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f11"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f12",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 12"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p12",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a12",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f12",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0012_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0012_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f12"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f13",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 13"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p13",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a13",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f13",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0013_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0013_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f13"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f14",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 14"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p14",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a14",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f14",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0014_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0014_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f14"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f15",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 15"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p15",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a15",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f15",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0015_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0015_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f15"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f16",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 16"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p16",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a16",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f16",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0016_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0016_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f16"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f17",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 17"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p17",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a17",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f17",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0017_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0017_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f17"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f18",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 18"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p18",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a18",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f18",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0018_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0018_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f18"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f19",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 19"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p19",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a19",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f19",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0019_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0019_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f19"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f20",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 20"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p20",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a20",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f20",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0020_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0020_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f20"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f21",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 21"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p21",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a21",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f21",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0021_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0021_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f21"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f22",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 22"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p22",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a22",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f22",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0022_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0022_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f22"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f23",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 23"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p23",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a23",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f23",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0023_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0023_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f23"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f24",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 24"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p24",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a24",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f24",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0024_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0024_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f24"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f25",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 25"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p25",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a25",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f25",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0025_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0025_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f25"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f26",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 26"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p26",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a26",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f26",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0026_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0026_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f26"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f27",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 27"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p27",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a27",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f27",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0027_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0027_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f27"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f28",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 28"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p28",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a28",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f28",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0028_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0028_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f28"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f29",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 29"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p29",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a29",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f29",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0029_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0029_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f29"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f30",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 30"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p30",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a30",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f30",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0030_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0030_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f30"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f31",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 31"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p31",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a31",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f31",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0031_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0031_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f31"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f32",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 32"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p32",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a32",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f32",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0032_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0032_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f32"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f33",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 33"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p33",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a33",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f33",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0033_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0033_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f33"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f34",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 34"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p34",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a34",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f34",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0034_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0034_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f34"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f35",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 35"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p35",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a35",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f35",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0035_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0035_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f35"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f36",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 36"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p36",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a36",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f36",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0036_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0036_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f36"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f37",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 37"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p37",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a37",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f37",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0037_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0037_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f37"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f38",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 38"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p38",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a38",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f38",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0038_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0038_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f38"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f39",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 39"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p39",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a39",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f39",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0039_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0039_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f39"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f40",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 40"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p40",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a40",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f40",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0040_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0040_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f40"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f41",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 41"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p41",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a41",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f41",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0041_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0041_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f41"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f42",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 42"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p42",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a42",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f42",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0042_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0042_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f42"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f43",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 43"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p43",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a43",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f43",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0043_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0043_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f43"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f44",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 44"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p44",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a44",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f44",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0044_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0044_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f44"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f45",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 45"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p45",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a45",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f45",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0045_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0045_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f45"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f46",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 46"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p46",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a46",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f46",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0046_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0046_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f46"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f47",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 47"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p47",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a47",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f47",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0047_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0047_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f47"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f48",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 48"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p48",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a48",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f48",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0048_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0048_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f48"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f49",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 49"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p49",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a49",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f49",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0049_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0049_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f49"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f50",
+            "type": "Canvas",
+            "label": {
+                "none": [
+                    "p. 50"
+                ]
+            },
+            "items": [
+                {
+                    "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation-page/p50",
+                    "type": "AnnotationPage",
+                    "items": [
+                        {
+                            "id": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/annotation/a50",
+                            "type": "Annotation",
+                            "motivation": "painting",
+                            "target": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f50",
+                            "body": {
+                                "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0050_L.jpg/full/full/0/default.jpg",
+                                "type": "Image",
+                                "format": "image/jpeg",
+                                "service": [
+                                    {
+                                        "id": "https://iiif.chartes.psl.eu/images/dist/lasteyrie/ENC_CARNET_NC1/ENC_CARNET_NC1_0050_L.jpg",
+                                        "type": "ImageService2",
+                                        "profile": "level2"
+                                    }
+                                ]
+                            },
+                            "on": "https://iiif.chartes.psl.eu/dist/lasteyrie/enc_carnet_nc1/canvas/f50"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
