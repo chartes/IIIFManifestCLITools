@@ -156,8 +156,8 @@ def main(input, output, collection_name, template_manifest, template_collection,
     with open("{0}/{1}.json".format(COLL_DIST_DIR, COLLECTION_NAME.lower()), 'w') as f:
         coll_name = "{0}/top".format(COLLECTION_URL_PREFIX)
         #Nom et sommaire des collections globales
-        coll_label = {"fr": ["Carnet de dessins de Robert de Lasteyrie."]}
-        coll_summary = {"fr": ["Carnet de dessins de Robert de Lasteyrie."]}
+        coll_label = {"fr": ["Nom Collection"]}
+        coll_summary = {"fr": ["Nom Sommaire"]}
         toplevel_collection_items = []
         coll_thumb = sorted(manifests, key=lambda e: e["id"])[0]["thumbnail"][0]["id"]
         coll_seeAlso = ""
