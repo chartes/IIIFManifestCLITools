@@ -19,11 +19,11 @@ from tools.make_manifest import load_json, render_template, render_collection
 @click.argument('output', type=str)
 @click.argument('collection_name', type=str)
 @click.argument('template_manifest', type=str)
-@click.option('--template_collection', type=str, help='Enter the template xml for the collections entry')
+@click.option('--template_collection', type=str, help='Enter the pat for the collections entry')
 @click.option('--metadata_conf', type=str, help='Enter the path of metadata tsv files, the first line contains the label and the first column must be name "id" and have the names of the folder who contains the images.')
 def main(input, output, collection_name, template_manifest, template_collection, metadata_conf):
     """
-    INPUT: Enter the name of the folder who contains the XML files or the differents folders who contains the XML files
+    INPUT: Enter the name of the folder who contains the images
 
     OUTPUT: Enter the destination path
 
@@ -81,7 +81,7 @@ def main(input, output, collection_name, template_manifest, template_collection,
 
     for root, dirs, files in os.walk(SRC_IMAGES_PATH):
         for filename in files:
-            if ".jpg" in filename:
+            if ".jpg" or ".tif" in filename:
                 manifest_id = root.split("/")[-1]
                 if manifest_id not in md_tmp:
                     md_tmp[manifest_id] = {
