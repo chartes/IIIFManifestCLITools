@@ -71,11 +71,13 @@ def main(input, output, collection_name, template_manifest, template_collection,
     list_metadata = []
     dict_metadata = {}
     if metadata_conf is not None:
+        metadata = load_json("templates/metadata.json")
         with open(metadata_conf, 'r', newline='') as meta:
             reader = csv.DictReader(meta, delimiter='\t', dialect="unix")
             for line in reader:
                 dict_metadata[line["id"]] = line
                 list_metadata.append(line)
+
     else:
         dict_metadata = None
 
@@ -101,10 +103,13 @@ def main(input, output, collection_name, template_manifest, template_collection,
         if dict_metadata is not None:
             try:
                 for key, values in dict_metadata[m["id"]].items():
-                    label_value = copy.deepcopy(metadata_canvaslabelvalue)
-                    label_value["label"]["fr"] = key
-                    label_value["value"]["fr"] = values
-                    metadata_manifest["metadata"].append(label_value)
+                    if key != "id":
+                        label_value = copy.deepcopy(metadata_canvaslabelvalue)
+                        label_value["label"]["fr"] = key
+                        label_value["value"]["fr"] = values
+                        metadata_manifest["metadata"].append(label_value)
+                    else:
+                        continue
             except:
                 print("{0} not present in metadata.tsv".format(m["id"]))
         #Ecrire le code en fonction des métadonnées correspondant
