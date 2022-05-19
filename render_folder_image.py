@@ -4,6 +4,7 @@ import click
 import os
 import csv
 from tools.make_manifest import load_json, render_template, render_collection
+import imghdr
 
 #Pas de DTS
 #DTS_COLLECTION_URL_PREFIX = "https://dev.chartes.psl.eu/dts/collections?id="
@@ -83,11 +84,8 @@ def main(input, output, collection_name, template_manifest, template_collection,
         dict_metadata = None
 
     for root, dirs, files in os.walk(SRC_IMAGES_PATH):
-
         for filename in files:
-            if filename.startswith('.'):
-                continue
-            if ".jpg" or ".tif" in filename:
+            if imghdr.what("{0}/{1}".format(root,filename)):
                 manifest_id = root.split("/")[-1]
                 if root.split("/")[-2] != input.split("/")[-1]:
                     if not root.split("/")[-2] in list_collection:
@@ -108,7 +106,6 @@ def main(input, output, collection_name, template_manifest, template_collection,
     # Ajout des métadonnées du document
     for m in md_tmp.values():
         metadata_manifest = copy.deepcopy(metadata)
-        print(type(metadata_manifest["metadata"]))
         if dict_metadata is not None:
             try:
                 for key, values in dict_metadata[m["id"]].items():
