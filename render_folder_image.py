@@ -70,6 +70,7 @@ def main(input, output, collection_name, template_manifest, template_collection,
     md_tmp = {}
     list_metadata = []
     dict_metadata = {}
+    list_collection = {}
     if metadata_conf is not None:
         metadata = load_json("templates/metadata.json")
         with open(metadata_conf, 'r', newline='') as meta:
@@ -82,10 +83,18 @@ def main(input, output, collection_name, template_manifest, template_collection,
         dict_metadata = None
 
     for root, dirs, files in os.walk(SRC_IMAGES_PATH):
+
         for filename in files:
+            if filename.startswith('.'):
+                continue
             if ".jpg" or ".tif" in filename:
                 manifest_id = root.split("/")[-1]
+                if root.split("/")[-2] != input.split("/")[-1]:
+                    if not root.split("/")[-2] in list_collection:
+                        list_collection[root.split("/")[-2]] = []
+                    list_collection[root.split("/")[-2]].append(manifest_id)
                 if manifest_id not in md_tmp:
+
                     md_tmp[manifest_id] = {
                         "id": manifest_id,
                         "label": manifest_id
@@ -108,6 +117,7 @@ def main(input, output, collection_name, template_manifest, template_collection,
                         label_value["label"]["fr"] = key
                         label_value["value"]["fr"] = values
                         metadata_manifest["metadata"].append(label_value)
+                        list_collection[m["id"]].append(m)
                     else:
                         continue
             except:
@@ -161,8 +171,12 @@ def main(input, output, collection_name, template_manifest, template_collection,
     with open("{0}/{1}.json".format(COLL_DIST_DIR, COLLECTION_NAME.lower()), 'w') as f:
         coll_name = "{0}/top".format(COLLECTION_URL_PREFIX)
         #Nom et sommaire des collections globales
-        coll_label = {"fr": ["Nom Collection"]}
-        coll_summary = {"fr": ["Nom Sommaire"]}
+        if template_collection is None:
+            coll_label = {"fr": ["Nom Collection"]}
+            coll_summary = {"fr": ["Nom Sommaire"]}
+        else:
+            coll_label = coll_tmp["label"]["fr"][0]
+            coll_summary = label_value["summary"]["fr"][0]
         toplevel_collection_items = []
         coll_thumb = sorted(manifests, key=lambda e: e["id"])[0]["thumbnail"][0]["id"]
         coll_seeAlso = ""
