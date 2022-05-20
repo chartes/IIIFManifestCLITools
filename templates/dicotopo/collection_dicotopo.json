@@ -2,8 +2,8 @@
   "@context": "http://iiif.io/api/presentation/3/context.json",
   "id": "",
   "type": "Collection",
-  "label": { "fr": [ "Label de la collection en français" ] },
-  "summary": { "fr": [ "Résumé court de la collection en français" ] },
+  "label": { "fr": [ "Dictionnaire topographique de la France" ] },
+  "summary": { "fr": [ "Quelques rétronumérisations indisponibles sur Gallica" ] },
   "requiredStatement": {
     "label": {
       "fr": [
@@ -28,12 +28,12 @@
   },
   "thumbnail": [
     {
-      "id": "https://iiif.chartes.psl.eu/images/lasteyrie/lasteyrie_1/lasteyrie_1.jpg/full/180,/0/default.jpg",
+      "id": "https://iiif.chartes.psl.eu/images/photo_promo/1904-1905_2_recto_1.jpg/full/180,/0/default.jpg",
       "type": "Image",
       "format": "image/jpeg",
       "service": [
         {
-          "id": "https://iiif.chartes.psl.eu/images/lasteyrie/lasteyrie_1/lasteyrie_1.jpg",
+          "id": "https://iiif.chartes.psl.eu/images/encpos/1904-1905_2_recto_1.jpg",
           "type": "ImageService2",
           "profile": "level2"
         }
@@ -42,7 +42,7 @@
   ],
   "partOf": [
     {
-      "id": "https://iiif.chartes.psl.eu/encprom/collection/top",
+      "id": "https://iiif.chartes.psl.eu/dicotopo/collection/top",
       "type": "Collection"
     }
   ],

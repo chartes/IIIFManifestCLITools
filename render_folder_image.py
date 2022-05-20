@@ -173,7 +173,7 @@ def main(input, output, collection_name, template_manifest, template_collection,
             coll_summary = {"fr": ["Nom Sommaire"]}
         else:
             coll_label = coll_tmp["label"]["fr"][0]
-            coll_summary = label_value["summary"]["fr"][0]
+            coll_summary = coll_tmp["summary"]["fr"][0]
         toplevel_collection_items = []
         coll_thumb = sorted(manifests, key=lambda e: e["id"])[0]["thumbnail"][0]["id"]
         coll_seeAlso = ""
