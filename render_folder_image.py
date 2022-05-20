@@ -111,8 +111,8 @@ def main(input, output, collection_name, template_manifest, template_collection,
                 for key, values in dict_metadata[m["id"]].items():
                     if key != "id":
                         label_value = copy.deepcopy(metadata_canvaslabelvalue)
-                        label_value["label"]["fr"] = key
-                        label_value["value"]["fr"] = values
+                        label_value["label"]["fr"] = [key]
+                        label_value["value"]["fr"] = [values]
                         metadata_manifest["metadata"].append(label_value)
                         list_collection[m["id"]].append(m)
                     else:
