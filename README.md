@@ -11,9 +11,9 @@ pip install -r requirement.txt
 
 ## Usage 
 ```
-render_folder_image.py --help 
+python render_folder_image.py --help 
 
-Usage: render_folder_image.py [OPTIONS] INPUT COLLECTION_NAME OUTPUT TEMPLATE
+Usage: python render_folder_image.py [OPTIONS] INPUT COLLECTION_NAME OUTPUT TEMPLATE
 
     INPUT: Enter the name of the folder who contains the XML files or the differents folders who contains the XML files
 
